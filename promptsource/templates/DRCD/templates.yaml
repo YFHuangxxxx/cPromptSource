@@ -1,0 +1,14 @@
+dataset: DRCD
+templates:
+  c9ee4a33-8632-4f33-8c2d-30c407fc0537: !Template
+    answer_choices: null
+    id: c9ee4a33-8632-4f33-8c2d-30c407fc0537
+    jinja: "\u8BF7\u4ECE\u4EE5\u4E0B\u6587\u672C\u6BB5\u843D\uFF1A{{paragraphs.context}}\uFF0C\
+      \n\u63D0\u53D6\u51FA\u90A3\u4E48\u95EE\u9898\uFF1A{{paragraphs.qas.question}}\u7684\
+      \u7B54\u6848\u662F\u4EC0\u4E48\n"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics: []
+      original_task: false
+    name: task_description
+    reference: ''

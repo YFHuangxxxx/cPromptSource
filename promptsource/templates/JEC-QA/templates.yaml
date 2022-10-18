@@ -1,0 +1,18 @@
+dataset: JEC-QA
+templates:
+  ebf64b24-ad7e-4c5d-b827-fa9e599f6307: !Template
+    answer_choices: null
+    id: ebf64b24-ad7e-4c5d-b827-fa9e599f6307
+    jinja: "\u8FD9\u9053\u9898\u76EE\u5C5E\u4E8E{{subject}}\u7684\u8303\u7574\uFF0C\
+      \n\u9898\u5E72\u4E3A\uFF1A{{statement}}\n\u8BF7\u5728\u4EE5\u4E0B\u9009\u9879\
+      \u4E2D\u9009\u62E9\u6B63\u786E\u7684\u7B54\u6848\u3002\nA:{{option_list[\"A\"\
+      ]}}\nB:{{option_list[\"B\"]}}\nC:{{option_list[\"C\"]}}\nD:{{option_list[\"\
+      D\"]}}\n|||\n{{answer[0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''

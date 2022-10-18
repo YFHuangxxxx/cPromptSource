@@ -1,0 +1,16 @@
+dataset: WANFANG
+templates:
+  e626fef6-b039-4053-a0ff-10d1dfbe05da: !Template
+    answer_choices: null
+    id: e626fef6-b039-4053-a0ff-10d1dfbe05da
+    jinja: "{{abstract}}\n===\n\u7ED9\u51FA\u4E0A\u8FF0\u6587\u7AE0\u6458\u8981\uFF0C\
+      \u8BF7\u4E3A\u5176\u5199\u4E00\u4E2A\u5408\u9002\u7684\u6807\u9898\uFF1A\n|||\
+      \ \n{{C_title}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: write_title
+    reference: ''

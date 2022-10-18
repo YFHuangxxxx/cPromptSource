@@ -1,0 +1,18 @@
+dataset: ocnli_public
+templates:
+  afb7edb4-7fe8-4b22-81e9-7794a963c8db: !Template
+    answer_choices: null
+    id: afb7edb4-7fe8-4b22-81e9-7794a963c8db
+    jinja: "{{sentence1}} \n\u6839\u636E\u4E0A\u9762\u53E5\u5B50\u4E2D\u7684\u4FE1\
+      \u606F\uFF0C\u4E0B\u9762\u53E5\u5B50\u4E2D\u7684\u4E3B\u5F20\n{{sentence2}}\n\
+      \ \u662F{{\"\u771F\"}}\uFF0C{{\"\u5047\"}}\uFF0C\u8FD8\u662F{{\"\u4E0D\u786E\
+      \u5B9A\"}}\uFF1F\n{{\"entailment\"}}\u4EE3\u8868\u662F\u771F\uFF0C{{\"contradictory\"\
+      }}\u4EE3\u8868\u662F\u5047\uFF0C{{\"inclusive\"}}\u4EE3\u8868\u4E0D\u786E\u5B9A\
+      \uFF0C\u65E0\u7ED3\u8BBA\u3002\n||| \n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: based_information
+    reference: ''

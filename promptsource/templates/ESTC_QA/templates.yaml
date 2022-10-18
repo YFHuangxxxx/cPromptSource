@@ -1,0 +1,15 @@
+dataset: ESTC_QA
+templates:
+  20713fe1-dd3c-4237-8257-93712b00167b: !Template
+    answer_choices: null
+    id: 20713fe1-dd3c-4237-8257-93712b00167b
+    jinja: "\u6839\u636E\u5BF9\u8BDD\u5386\u53F2\uFF1A{{history}}\n\u4EA7\u751F\u7B26\
+      \u5408\u903B\u8F91\u4E0E\u60C5\u611F\u7684\u56DE\u590D\uFF1A\n|||\n{{response}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''

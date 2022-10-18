@@ -1,0 +1,63 @@
+dataset: NLPCC14-SC
+templates:
+  3d5166f9-10c5-41f6-bb98-5b7ea50a8fc1: !Template
+    answer_choices: "\u4E0D\u559C\u6B22 ||| \u559C\u6B22"
+    id: 3d5166f9-10c5-41f6-bb98-5b7ea50a8fc1
+    jinja: "{{text_a}} \u8BC4\u8BBA\u8005\u6EE1\u610F\u8FD9\u6B21\u6D88\u8D39\u5417\
+      \uFF1F ||| {{ answer_choices [label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Reviewer_Enjoyment_14
+    reference: ''
+  5e95f99a-4ab4-4a4c-a65e-500e522d4e9c: !Template
+    answer_choices: "\u6D88\u6781\u7684 ||| \u79EF\u6781\u7684"
+    id: 5e95f99a-4ab4-4a4c-a65e-500e522d4e9c
+    jinja: "\u4E0B\u9762\u7684\u8BC4\u8BBA\u8868\u8FBE\u4E86\u4EC0\u4E48\u60C5\u7EEA\
+      \uFF1F\n\n{{text_a}}\n\n||| {{ answer_choices[label] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Expressed_Sentiment_14
+    reference: ''
+  865c715d-53b6-4b6b-8717-5ce55f2fd311: !Template
+    answer_choices: "\u4E0D\u597D ||| \u597D"
+    id: 865c715d-53b6-4b6b-8717-5ce55f2fd311
+    jinja: "{{text_a}} \n\u8BC4\u8BBA\u8005\u8BA4\u4E3A\u6240\u8BC4\u8BBA\u7684\u5BF9\
+      \u8C61\u597D\u8FD8\u662F\u4E0D\u597D\uFF1F\n||| \n{{ answer_choices[label] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Reviewer_Opinion_14
+    reference: ''
+  d859f829-e547-41e8-8047-96db9a947139: !Template
+    answer_choices: "\u53CD\u9762\u7684 ||| \u6B63\u9762\u7684"
+    id: d859f829-e547-41e8-8047-96db9a947139
+    jinja: "{{text_a}}\n\u8FD9\u7EDD\u5BF9\u4E0D\u662F\u4E00\u4E2A\n ||| {{answer_choices[1-label]}}\
+      \ \u8BC4\u8BBA\u3002"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Negation_for_postive_and_negative_14
+    reference: ''
+  e006e235-a065-472f-9838-351781742d31: !Template
+    answer_choices: "\u4E0D\u4F1A ||| \u4F1A"
+    id: e006e235-a065-472f-9838-351781742d31
+    jinja: "\u6839\u636E\u4EE5\u4E0B\u7684\u8BC4\u8BBA\uFF1A\n{{text_a}}\n\u8BE5\u7528\
+      \u6237\u4F1A\u5411\u670B\u53CB\u63A8\u8350\u4ED6\u6240\u6D88\u8D39\u8FC7\u7684\
+      \u4E1C\u897F\u5417\uFF1F\n|||\n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: User_recommend_14
+    reference: ''

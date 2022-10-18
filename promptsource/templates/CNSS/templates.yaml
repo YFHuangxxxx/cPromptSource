@@ -1,0 +1,16 @@
+dataset: CNSS
+templates:
+  c7f3bcd8-801e-4758-97b2-1fa0eaa169cb: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F"
+    id: c7f3bcd8-801e-4758-97b2-1fa0eaa169cb
+    jinja: "{{title1}}.{{content1}} \n{{title2}}.{{content2}}\n\u95EE\u9898: \u4EE5\
+      \u4E0A\u4E24\u4E2A\u957F\u6587\u672C\u4E2D\u662F\u5426\u63CF\u8FF0\u7684\u662F\
+      \u76F8\u540C\u7684\u4E8B\u4EF6\uFF1F\u662F\u6216\u8005\u4E0D\u662F\uFF1F \n\
+      ||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: long_content_cnss
+    reference: ''

@@ -1,0 +1,18 @@
+dataset: CPED
+templates:
+  c82ef162-aa28-4ea3-955a-3faf77a52445: !Template
+    answer_choices: null
+    id: c82ef162-aa28-4ea3-955a-3faf77a52445
+    jinja: "\u4EE5\u4E0B\u7684\u53E5\u5B50\u662F\u6765\u81EA\u4E8E\u4E00\u4E2A\u7535\
+      \u89C6\u5267\u4E2D\u7684\u4E00\u6BB5\u4EBA\u7269\u5BF9\u8BDD\uFF1A\n{{Utterance}}\n\
+      \u8BF7\u5224\u65AD\u5176\u4E2D\u5305\u542B\u7684\u60C5\u611F\u5C5E\u4E8E\u4EE5\
+      \u4E0B\u54EA\u4E00\u4E2A\u7C7B\u522B\uFF1A\nhappy, grateful, relaxed, other-positive,\
+      \ neutral, angry, sad, feared, depressed, disgusted, astonished, worried and\
+      \ other-negative\n|||\n{{Emotion}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

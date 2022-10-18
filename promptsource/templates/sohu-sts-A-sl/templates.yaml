@@ -1,0 +1,15 @@
+dataset: sohu-sts-A-sl
+templates:
+  d6ab52df-6b76-4b89-b141-50f04e91e081: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F\u7684"
+    id: d6ab52df-6b76-4b89-b141-50f04e91e081
+    jinja: "{{source}}\n\u4E0B\u9762\u7684\u957F\u6BB5\u843D\u662F\u5BF9\u4E0A\u9762\
+      \u77ED\u53E5\u4E3B\u9898\u7684\u6269\u5199\u5417\uFF1F\n{{target}}?\n\u662F\u6216\
+      \u8005\u4E0D\u662F\u3002\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: context_question_sl
+    reference: ''

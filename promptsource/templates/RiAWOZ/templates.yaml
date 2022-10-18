@@ -1,0 +1,17 @@
+dataset: RiAWOZ
+templates:
+  62bc2e95-4ec3-4af8-97c7-f856b1abfbbf: !Template
+    answer_choices: null
+    id: 62bc2e95-4ec3-4af8-97c7-f856b1abfbbf
+    jinja: "\u5BF9\u8BDD\u4E2D\u6211\u4EEC\u5E0C\u671B\u8FBE\u5230\u7684\u76EE\u6807\
+      \u662F\uFF1A\n{{goal}}\n\u8BF7\u5BF9\u4EE5\u4E0B\u8BED\u53E5\u505A\u51FA\u7B26\
+      \u5408\u903B\u8F91\u4E14\u6D41\u7545\u7684\u56DE\u590D\uFF1A\n{{dialogue.user_utterance}}\n\
+      |||\n{{dialogue.system_utterance}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''

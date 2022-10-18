@@ -1,0 +1,18 @@
+dataset: CINLID
+templates:
+  e8eaaeef-b91d-4b99-825d-df461d67476f: !Template
+    answer_choices: null
+    id: e8eaaeef-b91d-4b99-825d-df461d67476f
+    jinja: "\u6210\u8BED1\uFF1A{{phrase1}}\n\u6210\u8BED2\uFF1A{{phrase2}}\n\u95EE\
+      \u9898\uFF1A\u8BF7\u5224\u65AD\u4EE5\u4E0A\u4E24\u4E2A\u6210\u8BED\u7684\u542B\
+      \u4E49\u662Fentailment\uFF08\u76F8\u4F3C\u7684\uFF09\uFF0C\u8FD8\u662Fneutral\uFF08\
+      \u65E2\u4E0D\u76F8\u4F3C\u4E5F\u4E0D\u76F8\u53CD\uFF09\uFF0C\u53C8\u6216\u8005\
+      \u662Fcontradiction\uFF08\u76F8\u53CD\u7684\uFF09\uFF0C\u5E76\u5728\u4EE5\u4E0A\
+      \u7B54\u6848\u4E2D\u505A\u51FA\u9009\u62E9\u3002\n\u7B54\u6848\uFF1A{{label}}\n"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: choices_3
+    reference: ''

@@ -1,0 +1,15 @@
+dataset: paws-x-zh
+templates:
+  81d3409a-cc4a-483f-a39f-93fd46d10c39: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F\u7684"
+    id: 81d3409a-cc4a-483f-a39f-93fd46d10c39
+    jinja: "\u5224\u65AD\u4EE5\u4E0B\u4E24\u4E2A\u53E5\u5B50\u662F\u5426\u662F\u76F8\
+      \u4E92\u8FDB\u884C\u8F6C\u8FF0\u7684\u3002\n\u53E5\u5B50 1: {{text1}}\n\u53E5\
+      \u5B50 2: {{text2}}\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

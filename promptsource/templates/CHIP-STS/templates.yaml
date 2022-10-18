@@ -1,0 +1,16 @@
+dataset: CHIP-STS
+templates:
+  faee2c48-8870-4221-bef2-57e07c966804: !Template
+    answer_choices: "\u5426 ||| \u662F"
+    id: faee2c48-8870-4221-bef2-57e07c966804
+    jinja: "\u95EE\u53E51: {{text1}}\n\u95EE\u53E52: {{text2}}\n\u5B83\u4EEC\u6240\
+      \u60F3\u8981\u8BE2\u95EE\u7684\u75C5\u79CD\u540D\u79F0\u662F\uFF1A{{category}}\n\
+      \u8BF7\u5224\u65AD\u4EE5\u4E0A\u4E24\u4E2A\u95EE\u53E5\u662F\u5426\u53EF\u4EE5\
+      \u76F8\u4E92\u8FDB\u884C\u8F6C\u8FF0\u3002\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: meaning_cate
+    reference: ''

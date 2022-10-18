@@ -1,0 +1,20 @@
+dataset: CHIP-CDEE
+templates:
+  e809f7c8-d265-450e-bce4-5f117ec505f1: !Template
+    answer_choices: null
+    id: e809f7c8-d265-450e-bce4-5f117ec505f1
+    jinja: "\u7ED9\u5B9A\u4E00\u6BB5\u73B0\u75C5\u53F2\uFF1A\n{{text}}\n\u8BF7\u4ECE\
+      \u4E2D\u62BD\u53D6\u4E34\u5E8A\u53D1\u73B0\u4E8B\u4EF6\u7684\u4E3B\u4F53\u8BCD\
+      \u3002\u6307\u60A3\u8005\u7684\u7535\u5B50\u75C5\u5386\u4E2D\u7684\u75BE\u75C5\
+      \u540D\u79F0\u6216\u8005\u7531\u75BE\u75C5\u5F15\u53D1\u7684\u75C7\u72B6\uFF0C\
+      \u4E5F\u5305\u62EC\u60A3\u8005\u7684\u4E00\u822C\u60C5\u51B5\u5982\u996E\u98DF\
+      \uFF0C\u4E8C\u4FBF\uFF0C\u7761\u7720\u7B49\u3002\u4E3B\u4F53\u8BCD\u5C3D\u53EF\
+      \u80FD\u5B8C\u6574\u5E76\u662F\u4E13\u6709\u540D\u8BCD\u3002\n|||\n{{event.core_name}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - COQA F1
+      - Other
+      original_task: true
+    name: task_description
+    reference: ''

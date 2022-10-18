@@ -1,0 +1,17 @@
+dataset: cmnli_public
+templates:
+  4a530175-8113-44de-a8eb-26ff41e246a6: !Template
+    answer_choices: null
+    id: 4a530175-8113-44de-a8eb-26ff41e246a6
+    jinja: "{{sentence1}} \n\u90A3\u4E48\u6211\u4EEC\u6709\u5145\u5206\u7684\u7406\
+      \u7531\u8BF4\"{{sentence2}}\"\u5417\uFF1F\u662F\uFF0C\u4E0D\u662F\uFF0C\u8FD8\
+      \u662F\u4E0D\u786E\u5B9A\uFF1F\n{{\"entailment\"}}\u4EE3\u8868\u662F\u771F\uFF0C\
+      {{\"contradictory\"}}\u4EE3\u8868\u662F\u5047\uFF0C{{\"neutral\"}}\u4EE3\u8868\
+      \u4E0D\u786E\u5B9A\u3002\n||| \n{{label}} "
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: justify_true
+    reference: ''

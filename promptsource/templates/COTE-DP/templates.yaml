@@ -1,0 +1,15 @@
+dataset: COTE-DP
+templates:
+  abb0bdbc-e0c2-4082-8c09-3ddd4ff60d43: !Template
+    answer_choices: null
+    id: abb0bdbc-e0c2-4082-8c09-3ddd4ff60d43
+    jinja: "\u5BF9\u4E8E\u7ED9\u5B9A\u7684\u6587\u672C\uFF1A{{text_a}}\n\u8BF7\u6839\
+      \u636E\u6587\u672C\u7684\u5185\u5BB9,\u7ED9\u51FA\u5176\u4E2D\u63CF\u8FF0\u7684\
+      \u8BC4\u4EF7\u5BF9\u8C61\u3002\n|||\n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

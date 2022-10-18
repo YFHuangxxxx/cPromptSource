@@ -1,0 +1,16 @@
+dataset: LCCC_QA
+templates:
+  dff0f96e-5c14-4548-a023-228f92ed8dc0: !Template
+    answer_choices: null
+    id: dff0f96e-5c14-4548-a023-228f92ed8dc0
+    jinja: "\u4E0B\u9762\u4E3A\u4E00\u6BB5\u5B8C\u6574\u7684\u5BF9\u8BDD\u3002\n\u7B2C\
+      \u4E00\u53E5\u8BDD\u662F\uFF1A{{conversation[0]}}\n\u8BF7\u4EA7\u751F\u7B26\u5408\
+      \u903B\u8F91\u7684\u4E30\u5BCC\u7684\u56DE\u590D\uFF1A\n|||\n{{conversation[1]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''

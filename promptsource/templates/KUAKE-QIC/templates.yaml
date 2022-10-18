@@ -1,0 +1,21 @@
+dataset: KUAKE-QIC
+templates:
+  7e45cc91-e5b3-46ca-a9b9-741b1b2205b2: !Template
+    answer_choices: null
+    id: 7e45cc91-e5b3-46ca-a9b9-741b1b2205b2
+    jinja: "{{query}}\n\u4E0A\u9762\u8FD9\u4E2A\u641C\u7D22\u95EE\u9898\u7684\u67E5\
+      \u8BE2\u610F\u56FE\u662F\u4EC0\u4E48\uFF0C\u53EF\u5C06\u5176\u5F52\u7C7B\u4E3A\
+      \u4E0B\u5217\u7684\u54EA\u4E00\u7C7B\u6807\u7B7E\uFF1F\n\u201C\u75C5\u60C5\u8BCA\
+      \u65AD\u201D\u3001\u201C\u75C5\u56E0\u5206\u6790\u201D\u3001\u201C\u6CBB\u7597\
+      \u65B9\u6848\u201D\u3001\u201C\u5C31\u533B\u5EFA\u8BAE\u201D\u3001\u201C\u6307\
+      \u6807\u89E3\u8BFB\u201D\u3001\u201C\u75BE\u75C5\u63CF\u8FF0\u201D\u3001\u201C\
+      \u540E\u679C\u8868\u8FF0\u201D\u3001\u201C\u6CE8\u610F\u4E8B\u9879\u201D\u3001\
+      \u201C\u529F\u6548\u4F5C\u7528\u201D\u3001\u201C\u533B\u7597\u8D39\u7528\u201D\
+      \u3001\u201C\u5176\u4ED6\u201D\u3002\n|||\n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description_intent
+    reference: ''

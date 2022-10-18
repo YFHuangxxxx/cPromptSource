@@ -1,0 +1,21 @@
+dataset: ekar_chinese
+templates:
+  0bb6b603-115e-4ae9-b17b-881fa72b2e81: !Template
+    answer_choices: null
+    id: 0bb6b603-115e-4ae9-b17b-881fa72b2e81
+    jinja: "\u89E3\u91CA\u7684\u4FE1\u606F:\n{{explanation}}\n\n\u4E0B\u9762\u54EA\
+      \u4E2A\u9009\u9879\u4E2D\u7684\u5BF9\u8C61\u5B9E\u4F53\u7684\u524D\u540E\u5173\
+      \u7CFB\u4E0E\u4E3B\u8BED'{{ question}}'\u4E2D\u7684\u5BF9\u8C61\u6709\u76F8\u4F3C\
+      \u7C7B\u6BD4\u7684\u5173\u7CFB\uFF1F \n\nChoices:\n{{choices[\"label\"][0]}}:\
+      \ {{choices[\"text\"][0]}}\n{{choices[\"label\"][1]}}: {{choices[\"text\"][1]}}\n\
+      {{choices[\"label\"][2]}}: {{choices[\"text\"][2]}}\n{{choices[\"label\"][3]}}:\
+      \ {{choices[\"text\"][3]}}\n\n|||\n{{answerKey}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: choose_best_object
+    reference: "\u7ED9\u5B9A\u4FE1\u606F\u548C\u4E3B\u8BED\u53CA\u5173\u7CFB\uFF0C\
+      \u9009\u62E9\u6700\u4F73\u7684\u5339\u914D\u7684\u5B9E\u4F53\uFF08\u95EE\u53E5\
+      \u5F0F\u6307\u4EE4\uFF09\u3002"

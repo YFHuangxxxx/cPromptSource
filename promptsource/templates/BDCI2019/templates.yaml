@@ -1,0 +1,66 @@
+dataset: BDCI2019
+templates:
+  1e90a24a-1182-43dd-9445-22f2e56e5760: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F\u7684 ||| \u4E0D\u662F"
+    id: 1e90a24a-1182-43dd-9445-22f2e56e5760
+    jinja: "\u6807\u9898: {{title}}\n\u6587\u672C: {{content}}\n\u8FD9\u7BC7\u5FAE\
+      \u535A\u6587\u672C\u60C5\u611F\u662F\u4E2D\u7ACB\u7684\u5417\uFF1F|||\n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Is_this_content_neutral
+    reference: ''
+  592caf8f-f8ff-426a-a61b-b7e95ed510b0: !Template
+    answer_choices: "\u662F\u7684 ||| \u4E0D\u662F ||| \u4E0D\u662F"
+    id: 592caf8f-f8ff-426a-a61b-b7e95ed510b0
+    jinja: "\u4E0B\u9762\u7684\u6587\u672C\u60C5\u611F\u662F\u79EF\u6781\u7684\u5417\
+      ?\n\u6807\u9898: {{title}}\n\u6587\u672C: {{content}}\n\u7B54\u6848: |||\n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Is_this_content_positive
+    reference: ''
+  745b9c05-10df-4a7e-81ad-1b88cefcb160: !Template
+    answer_choices: "\u4E0D\u662F ||| \u4E0D\u662F ||| \u662F\u7684"
+    id: 745b9c05-10df-4a7e-81ad-1b88cefcb160
+    jinja: "\u6807\u9898: {{title}}\n\u6587\u672C: {{content}}\n\u8FD9\u7BC7\u6587\
+      \u7AE0\u8868\u8FBE\u7684\u60C5\u611F\u662F\u8D1F\u9762\u7684\u5417\uFF1F|||\n\
+      {{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: Is_this_content_negative
+    reference: ''
+  8abb5377-5dd3-4402-92a5-0d81adb6a320: !Template
+    answer_choices: "\u6B63\u9762\u7684 ||| \u4E2D\u7ACB\u7684 ||| \u8D1F\u9762\u7684"
+    id: 8abb5377-5dd3-4402-92a5-0d81adb6a320
+    jinja: "\u6807\u9898: {{title}}\n\u6587\u672C: {{content}}\n\u8FD9\u7BC7\u6587\
+      \u672C\u60F3\u8981\u4F20\u8FBE\u7684\u662F\u8D1F\u9762\u7684\uFF0C\u4E2D\u7ACB\
+      \u7684\u8FD8\u662F\u6B63\u9762\u7684\u60C5\u7EEA\uFF1F|||\n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: convey_what_sentiment
+    reference: ''
+  9df70cdf-f8ed-4e79-8e2f-b4668058d630: !Template
+    answer_choices: "\u6B63\u9762\u7684 ||| \u4E2D\u7ACB\u7684 ||| \u8D1F\u9762\u7684"
+    id: 9df70cdf-f8ed-4e79-8e2f-b4668058d630
+    jinja: "\u4F5C\u8005\u662F\u4EE5\u4E00\u79CD\u600E\u6837\u7684\u57FA\u8C03\u63CF\
+      \u8FF0\u7684\u6587\u672C\uFF1F\u79EF\u6781\u6B63\u9762\u7684\u8FD8\u662F\u4E2D\
+      \u7ACB\u7684\u6216\u8005\u662F\u8D1F\u9762\u6D88\u6781\u7684\uFF1F\n===\n\u6807\
+      \u9898: {{title}}\n\u6587\u672C: {{content}}\n\u7B54\u6848: |||\n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: negative_or_neutral_positive_tone
+    reference: ''

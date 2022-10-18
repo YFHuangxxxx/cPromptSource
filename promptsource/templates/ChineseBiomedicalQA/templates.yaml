@@ -1,0 +1,17 @@
+dataset: ChineseBiomedicalQA
+templates:
+  e3896c90-83ba-4c66-8e8b-5b9dbbb879dc: !Template
+    answer_choices: null
+    id: e3896c90-83ba-4c66-8e8b-5b9dbbb879dc
+    jinja: "\u6839\u636E\u80CC\u666Fc\uFF0C\u9898\u5E72q\u548C\u9009\u9879o\uFF08\
+      5\u4E2A\u9009\u9879\uFF09\uFF0C\u9009\u62E9\u6B63\u786E\u7684\u7B54\u6848(a)\u3002\
+      \n\n\u80CC\u666F(c): {{backgroundText}}\n\u9898\u5E72(q): {{questionText}}\n\
+      \u9009\u9879(o): {{option[0]}}; {{option[1]}}; {{option[2]}}; {{option[3]}};\
+      \ {{option[4]}}\n\u7B54\u6848(a):\n|||\n{{answer[0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

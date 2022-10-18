@@ -1,0 +1,15 @@
+dataset: CLUEWSC2020_public
+templates:
+  600b5e23-25f4-4d0f-8b04-874083a695f2: !Template
+    answer_choices: null
+    id: 600b5e23-25f4-4d0f-8b04-874083a695f2
+    jinja: "\u5728\u4E0B\u9762\u7684\u6BB5\u843D\u4E2D\uFF0C\u4EE3\u8BCD{{target[\"\
+      span2_text\"]}}\u662F\u5426\u6307\u4EE3\u7684\u662F{{target[\"span1_text\"]}}\uFF1F\
+      \u201Ctrue\u201D \u8FD8\u662F\u201Cfalse\u201D\uFF1F\n{{text}}\n|||\n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: stand_for
+    reference: ''

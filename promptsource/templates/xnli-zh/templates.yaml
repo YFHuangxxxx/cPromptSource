@@ -1,0 +1,18 @@
+dataset: xnli-zh
+templates:
+  f17081b3-8ac6-46a7-a18c-af4794056d34: !Template
+    answer_choices: null
+    id: f17081b3-8ac6-46a7-a18c-af4794056d34
+    jinja: "\u5C06\u4EE5\u4E0B\u5185\u5BB9\u4F5C\u4E3A\u4E8B\u5B9E: {{premise}}\n\n\
+      \u90A3\u4E48\uFF0C\u4E0B\u9762\u7684\u9648\u8FF0: {{hypo}}\u662F{{\"\u771F\"\
+      }}\uFF0C{{\"\u5047\"}}\uFF0C\u8FD8\u662F{{\"\u65E0\u7ED3\u8BBA\"}}\uFF1F\n{{\"\
+      entailment\"}}\u4EE3\u8868\u662F\u771F\uFF0C{{\"contradictory\"}}\u4EE3\u8868\
+      \u662F\u5047\uFF0C{{\"inclusive\"}}\u4EE3\u8868\u4E0D\u786E\u5B9A\uFF0C\u65E0\
+      \u7ED3\u8BBA\u3002\n||| \n{{label}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: as_truth
+    reference: ''

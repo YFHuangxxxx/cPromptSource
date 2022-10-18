@@ -1,0 +1,15 @@
+dataset: xquad-zh
+templates:
+  d659e377-7ea1-4867-a404-b57d1a7c53a9: !Template
+    answer_choices: null
+    id: d659e377-7ea1-4867-a404-b57d1a7c53a9
+    jinja: "{{context}}\n\u95EE\u9898: {{question}}\n\u53C2\u7167\u4E0A\u9762\u7684\
+      \u6BB5\u843D\uFF0C\u7ED9\u5B9A\u95EE\u9898\u7684\u6B63\u786E\u7B54\u6848\u662F\
+      \n||| \n{{answers[\"text\"][0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Squad
+      original_task: true
+    name: task_descpription
+    reference: ''

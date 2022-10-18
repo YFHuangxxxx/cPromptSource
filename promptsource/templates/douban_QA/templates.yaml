@@ -1,0 +1,15 @@
+dataset: douban_QA
+templates:
+  60ffd572-701b-49b7-a65b-97e9c7ce7f27: !Template
+    answer_choices: null
+    id: 60ffd572-701b-49b7-a65b-97e9c7ce7f27
+    jinja: "\u8BF7\u6839\u636E\u4EE5\u4E0B\u5BF9\u8BDD\u5386\u53F2\uFF1A{{history}}\n\
+      \u4EA7\u751F\u7B26\u5408\u903B\u8F91\u7684\u56DE\u590D\uFF1A\n|||\n{{response}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''

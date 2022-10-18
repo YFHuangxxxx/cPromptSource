@@ -1,0 +1,18 @@
+dataset: tnews_public
+templates:
+  fe7ff241-2166-4496-838b-2686741d5134: !Template
+    answer_choices: null
+    id: fe7ff241-2166-4496-838b-2686741d5134
+    jinja: "{{text}} \n\u4E0B\u9762\u54EA\u4E2A\u6807\u7B7E\u6700\u80FD\u63CF\u8FF0\
+      \u8FD9\u7BC7\u65B0\u95FB\u62A5\u9053\uFF1F\u8BF7\u4ECE\u4EE5\u4E0B15\u4E2A\u6807\
+      \u7B7E\u4E2D\u9009\u62E9\u4E00\u4E2A\u3002\nnews_entertainment, news_edu, news_game,\
+      \ news_world, news_finance, news_tech, news_story,  news_culture,  news_agriculture,\
+      \ news_car, news_military, news_sports, news_travel, news_house news_stock\n\
+      ||| \n{{label_desc}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: classify_with_choices
+    reference: ''

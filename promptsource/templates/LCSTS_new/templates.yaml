@@ -1,0 +1,16 @@
+dataset: LCSTS_new
+templates:
+  f0b5e360-dbf9-4600-b86e-64026c04554c: !Template
+    answer_choices: null
+    id: f0b5e360-dbf9-4600-b86e-64026c04554c
+    jinja: "\u4F60\u80FD\u7528\u4E00\u53E5\u8BDD\u5199\u51FA\u4EE5\u4E0B\u6587\u672C\
+      \u5185\u5BB9\u7684\u63D0\u7EB2\u5417\uFF1F\n\u6587\u672C\u5185\u5BB9\uFF1A{{content}}\n\
+      |||\n{{summary}}."
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: outline
+    reference: ''

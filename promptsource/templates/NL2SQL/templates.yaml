@@ -1,0 +1,14 @@
+dataset: NL2SQL
+templates:
+  21877613-ed99-4007-98ca-33971a5a52a2: !Template
+    answer_choices: null
+    id: 21877613-ed99-4007-98ca-33971a5a52a2
+    jinja: "\u6839\u636E\u95EE\u9898\uFF1A{{question}}\n\u8BF7\u5199\u51FA\u5BF9\u5E94\
+      \u7684SQL\u67E5\u8BE2\u8BED\u53E5\uFF1A\n|||\n{{query}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

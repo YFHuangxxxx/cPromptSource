@@ -1,0 +1,17 @@
+dataset: CMeEE
+templates:
+  361e79de-77ed-426c-a0bb-0ad8efe7d059: !Template
+    answer_choices: null
+    id: 361e79de-77ed-426c-a0bb-0ad8efe7d059
+    jinja: "\u7ED9\u5B9A\u4E00\u6BB5\u7EAF\u533B\u5B66\u6587\u672C\uFF1A\n{{text}}\n\
+      \u8BF7\u8BC6\u522B\u5E76\u62BD\u53D6\u51FA\u4E0E\u533B\u5B66\u4E34\u5E8A\u76F8\
+      \u5173\u7684\u5B9E\u4F53\u3002\n|||\n{{entities.entity}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - COQA F1
+      - Other
+      original_task: true
+    name: task_description
+    reference: ''

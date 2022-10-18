@@ -1,0 +1,16 @@
+dataset: nlpcc2017-newsClassification
+templates:
+  3f28548e-29e9-4e92-92fc-b4a6fec86c8c: !Template
+    answer_choices: null
+    id: 3f28548e-29e9-4e92-92fc-b4a6fec86c8c
+    jinja: "{{news}} \n\u8FD9\u6761\u65B0\u95FB\u53EF\u80FD\u4F1A\u51FA\u73B0\u5728\
+      \u4EE5\u4E0B\u54EA\u4E2A\u680F\u76EE\u7684\u6807\u9898\u4E2D\uFF1F \n{{\"history,\
+      \ military, baby\t, world, tech, game, society, sports, travel, car, food, entertainment,\
+      \ finance, fashion, discovery, story, regimen, essay\"}}\n||| \n{{category}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: which_section
+    reference: ''

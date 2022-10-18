@@ -1,0 +1,15 @@
+dataset: csl_public
+templates:
+  c51cc12d-7673-4c1e-86ae-30a4b85cbb9b: !Template
+    answer_choices: null
+    id: c51cc12d-7673-4c1e-86ae-30a4b85cbb9b
+    jinja: "\u5BF9\u4E8E\u7ED9\u5B9A\u7684\u6587\u672C\uFF1A{{abst}}\n\u8BF7\u6839\
+      \u636E\u6587\u672C\u7684\u5185\u5BB9,\u7ED9\u51FA\u5176\u4E2D\u7684\u5173\u952E\
+      \u8BCD\u3002\n|||\n{{keyword[0], keyword[1], keyword[2] }}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: task_description
+    reference: ''

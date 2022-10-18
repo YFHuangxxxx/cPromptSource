@@ -1,0 +1,30 @@
+dataset: luge_Diamante
+templates:
+  2f96f127-25aa-4892-aff0-a9787328eefe: !Template
+    answer_choices: null
+    id: 2f96f127-25aa-4892-aff0-a9787328eefe
+    jinja: "\u4E24\u4E2A\u5BF9\u8BDD\u8005\u6B63\u5728\u8FDB\u884C\u95F2\u804A\uFF0C\
+      \u4EE5\u4E0B\u662F\u4EBA\u5DE5\u8FDB\u884C\u9009\u62E9\u7684\u5BF9\u8BDD\u5386\
+      \u53F2\uFF1A\n\u8BF4\u8BDD\u80051\uFF1A{{conversation[0].utterance}}\n\u8BF4\
+      \u8BDD\u80052\uFF1A{{conversation[1].utterance}}\n\u8BF4\u8BDD\u80051\uFF1A\
+      {{conversation[2].utterance}}\n\u8BF4\u8BDD\u80052\uFF1A{{conversation[3].utterance}}\n\
+      \u8BF4\u8BDD\u80051\uFF1A{{conversation[4].utterance}}\n\u8BF4\u8BDD\u80052\uFF1A\
+      {{conversation[5].utterance}}\n\u8BF4\u8BDD\u80051\uFF1A{{conversation[6].utterance}}\n\
+      \u8BF4\u8BDD\u80052\uFF1A{{conversation[7].utterance}}\n\u8BF4\u8BDD\u80051\uFF1A\
+      {{conversation[8].utterance}}\n\u8BF4\u8BDD\u80052\uFF1A{{conversation[9].utterance}}\n\
+      \u8BF4\u8BDD\u80051\uFF1A{{conversation[10].utterance}}\n\u8BF4\u8BDD\u8005\
+      2\uFF1A{{conversation[11].utterance}}\n\u8BF4\u8BDD\u80051\uFF1A{{conversation[12].utterance}}\n\
+      \u8BF7\u4ECE\u4EE5\u4E0B\u5019\u9009\u4E2D\u9009\u51FA\u7B26\u5408\u6574\u4E2A\
+      \u5BF9\u8BDD\u5386\u53F2\u7684\u6700\u7EC8\u56DE\u590D\u3002\n\u5019\u9009\uFF1A\
+      \n1. {{conversation[12].response_candidates[0]}}\n2. {{conversation[12].response_candidates[1]}}\n\
+      3. {{conversation[12].response_candidates[2]}}\n4. {{conversation[12].response_candidates[3]}}\n\
+      5. {{conversation[12].response_candidates[4]}}\n6. {{conversation[12].response_candidates[5]}}\n\
+      7. {{conversation[12].response_candidates[6]}}\n|||\n{{conversation[13].utterance}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      - Other
+      original_task: true
+    name: task_description
+    reference: ''

@@ -1,0 +1,16 @@
+dataset: sohu-sts-A-ll
+templates:
+  779eb68f-a04c-424c-b7ac-497db0a88dd9: !Template
+    answer_choices: "\u4E0D\u53EF\u4EE5 ||| \u53EF\u4EE5"
+    id: 779eb68f-a04c-424c-b7ac-497db0a88dd9
+    jinja: "\u539F\u6BB5\u843D: {{source}}\n\u76EE\u6807\u6BB5\u843D: {{target}}\n\
+      \u95EE\u9898: \u6211\u4EEC\u53EF\u4EE5\u628A\u539F\u6BB5\u843D\u6240\u8BA8\u8BBA\
+      \u7684\u8BDD\u9898\u6539\u5199\u6210\u76EE\u6807\u6BB5\u843D\u7684\u8BDD\u9898\
+      \u5417\uFF1F\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: rewrite_ll
+    reference: ''

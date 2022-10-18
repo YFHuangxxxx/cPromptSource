@@ -1,0 +1,15 @@
+dataset: sohu-sts-A-ss
+templates:
+  bb890707-692c-4cff-b3f1-720c4ea704ff: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F"
+    id: bb890707-692c-4cff-b3f1-720c4ea704ff
+    jinja: "\u6E90\u53E5\u5B50: {{source}}\n\u76EE\u6807\u53E5\u5B50: {{target}}\n\
+      \u95EE\u9898\uFF1A\u6E90\u53E5\u5B50\u662F\u5426\u8F6C\u8FF0\u4E86\u76EE\u6807\
+      \u53E5\u5B50\uFF1F\u662F\u6216\u4E0D\u662F\uFF1F\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: concatenation_ss
+    reference: ''

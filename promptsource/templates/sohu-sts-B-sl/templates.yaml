@@ -1,0 +1,16 @@
+dataset: sohu-sts-B-sl
+templates:
+  43faa78b-4905-42f2-909e-74f9d9fa308c: !Template
+    answer_choices: "\u4E0D\u53EF\u4EE5 ||| \u53EF\u4EE5"
+    id: 43faa78b-4905-42f2-909e-74f9d9fa308c
+    jinja: "\u77ED\u53E5: {{source}}\n\u957F\u6BB5\u843D: {{target}}\n\u95EE\u9898\
+      : \u6211\u4EEC\u53EF\u4EE5\u628A\u957F\u6BB5\u843D\u6240\u63CF\u8FF0\u7684\u4E8B\
+      \u4EF6\u51DD\u7EC3\u4E3A\u4E0A\u9762\u7684\u77ED\u53E5\u5417\uFF1F\u53EF\u4EE5\
+      \u8FD8\u662F\u4E0D\u53EF\u4EE5\uFF1F\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: true
+      metrics:
+      - Accuracy
+      original_task: true
+    name: rewrite_B_sl
+    reference: ''

@@ -1,0 +1,26 @@
+dataset: DuRecDial_QA
+templates:
+  291933f9-5b05-41dd-a0a8-2b503a34ac1c: !Template
+    answer_choices: null
+    id: 291933f9-5b05-41dd-a0a8-2b503a34ac1c
+    jinja: "\u5728\u5BF9\u8BDD\u4E2D\u6211\u4EEC\u6709\u4EE5\u4E0B\u591A\u4E2A\u76EE\
+      \u6807\uFF1A\n{{goal}}\n\u5E76\u4E14\u6211\u4EEC\u6709\u4EE5\u4E0B\u7684\u77E5\
+      \u8BC6\u4FE1\u606F\uFF1A\n{{knowledge}}\n\u5BF9\u4E8E\u5BF9\u8BDD\u4E2D\u7684\
+      \u7528\u6237\u6211\u4EEC\u5DF2\u7ECF\u4E3A\u5176\u523B\u753B\u51FA\u4E86\u753B\
+      \u50CF\uFF1A\n{{user_profile}}\n\u5728\u4EE5\u4E0B\u7684\u5BF9\u8BDD\u573A\u666F\
+      \u4E2D\uFF1A\n{{situation}}\n\u5DF2\u7ECF\u6709\u4E86\u4EE5\u4E0B\u7684\u5BF9\
+      \u8BDD\u5386\u53F2\uFF1A\nUser: {{conversation[0]}}\nBot: {{conversation[1]}}\n\
+      User: {{conversation[2]}}\nBot: {{conversation[3]}}\nUser: {{conversation[4]}}\n\
+      Bot:{{conversation[5]}}\nUser: {{conversation[6]}}\nBot: {{conversation[7]}}\n\
+      User: {{conversation[8]}}\nBot: {{conversation[9]}}\nUser: {{conversation[10]}}\n\
+      \u8BF7\u4EA7\u751F\u7B26\u5408\u7528\u6237\u753B\u50CF\uFF0C\u5BF9\u8BDD\u5386\
+      \u53F2\u548C\u5BF9\u8BDD\u76EE\u6807\uFF0C\u4E14\u81EA\u7136\u6D41\u7545\u3001\
+      \u4FE1\u606F\u4E30\u5BCC\u7684\u56DE\u590D\u3002\n|||\n{{conversation[11]}}\n"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - Other
+      original_task: true
+    name: task_description
+    reference: ''

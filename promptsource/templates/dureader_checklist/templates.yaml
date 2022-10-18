@@ -1,0 +1,19 @@
+dataset: dureader_checklist
+templates:
+  5d29a738-4b93-4fae-86f3-e9e47151cce3: !Template
+    answer_choices: null
+    id: 5d29a738-4b93-4fae-86f3-e9e47151cce3
+    jinja: "\u7ED9\u5B9A\u4E00\u4E2A\u95EE\u9898\uFF1A{{question}}\n\u4E00\u6BB5\u7BC7\
+      \u7AE0\uFF1A{{context}}\uFF0C\n\u8BF7\u6839\u636E\u7BC7\u7AE0\u5185\u5BB9\uFF0C\
+      \u5224\u65AD\u8BE5\u7BC7\u7AE0\u4E2D\u662F\u5426\u5305\u542B\u7ED9\u5B9A\u95EE\
+      \u9898\u7684\u7B54\u6848\uFF0C\u5982\u679C\u662F\uFF0C\u5219\u7ED9\u51FA\u8BE5\
+      \u95EE\u9898\u7684\u7B54\u6848a\uFF1B\u5426\u5219\u8F93\u51FA\u4E3A\u7A7A\u3002\
+      \n|||\n{{answers.text[0]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - COQA F1
+      - Other
+      original_task: true
+    name: task_description
+    reference: ''
