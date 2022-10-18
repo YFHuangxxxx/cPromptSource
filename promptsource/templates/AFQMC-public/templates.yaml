@@ -1,0 +1,14 @@
+dataset: AFQMC-public
+templates:
+  b81277e9-5d1c-4983-873e-12eeacddb4e4: !Template
+    answer_choices: "\u4E0D\u662F ||| \u662F\u7684"
+    id: b81277e9-5d1c-4983-873e-12eeacddb4e4
+    jinja: "{{sentence1}}\n\u8FD9\u662F\u5BF9\u4E0B\u9762\u8FD9\u53E5\u8BDD\u7684\u8F6C\
+      \u8FF0\u5417\uFF1F\n{{sentence2}}?\n||| \n{{answer_choices[label]}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - Accuracy
+      original_task: true
+    name: context_question
+    reference: ''

@@ -1,0 +1,16 @@
+dataset: AdvertiseGen
+templates:
+  e2f021eb-7d8c-473f-98d1-5c4e622c1f49: !Template
+    answer_choices: null
+    id: e2f021eb-7d8c-473f-98d1-5c4e622c1f49
+    jinja: "\u7ED9\u5B9A\u5546\u54C1\u4FE1\u606F\u5C5E\u6027\u7684\u5173\u952E\u8BCD\
+      \u5217\u8868{{content}}\uFF0C\n\u8BF7\u751F\u6210\u9002\u5408\u8BE5\u5546\u54C1\
+      \u7684\u5E7F\u544A\u6587\u6848\uFF1A\n|||\n{{summary}}"
+    metadata: !TemplateMetadata
+      choices_in_prompt: false
+      metrics:
+      - BLEU
+      - ROUGE
+      original_task: true
+    name: task_description
+    reference: ''
