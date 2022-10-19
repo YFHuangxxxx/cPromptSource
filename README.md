@@ -23,7 +23,7 @@ Requirments
 1. 准备环境：`conda create -n cpromptsource(可换成你自己环境的名字) python=3.7`
 2. 激活环境：conda activate cpromptsource
 3. git clone此项目到你的本地/或者download此项目到本地
-4. 数据集准备：有部分数据集过大的数据集，我们将其下载链接放在了网盘中，可将其下载到目录cPromptSource/promptsource/datasets下
+4. 数据集准备：有部分数据集过大的数据集，我们将其下载链接放在了[百度网盘](https://pan.baidu.com/s/1a9Fj5u-yZ4pJVFvcdAcjWg?pwd=gnns)中，可将其下载到目录cPromptSource/promptsource/datasets下
 5. cd到该项目的根目录下
 6. Run `pip install -e .` to install the `promptsource` module
 
