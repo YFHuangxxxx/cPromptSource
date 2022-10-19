@@ -58,7 +58,7 @@ state = _get_state()
 #
 # Initial page setup
 #
-st.set_page_config(page_title="Promptsource", layout="wide")
+st.set_page_config(page_title="cPromptsource", layout="wide")
 st.sidebar.markdown(
     "<center>Promptsource\n\n</a></center>",
     unsafe_allow_html=True,
@@ -169,7 +169,7 @@ else:
         #
         # Check for subconfigurations (i.e. subsets)
         #
-        configs = get_dataset_confs("/data/xx/test_github/createprompt_test/promptsource/datasets/%s" % (dataset_key))
+        configs = get_dataset_confs("/data/xx/cPromptSource/promptsource/datasets/%s" % (dataset_key))
         print(configs)
         conf_option = None
         if len(configs) > 0:
@@ -178,17 +178,15 @@ else:
         subset_name = str(conf_option.name) if conf_option else None
         print(subset_name)
         try:
-            #dataset = datasets.load_dataset(dataset_key, subset_name, use_auth_token=True)
             if subset_name is None:
-                dataset = datasets.load_dataset("datasets/%s" % (dataset_key))
+                dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s" % (dataset_key))
             else:
-                dataset = datasets.load_dataset("datasets/%s/%s" % (dataset_key, subset_name), subset_name)
-            #dataset = get_dataset("C:/Users/14190/Desktop/myPromptSource/promptsource/.cache/MaMTL/datasets/%s" % (dataset_key), subset_name)
+                dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s/%s" % (dataset_key, subset_name), subset_name)
         except OSError as e:
             st.error(
                 f"您自己的数据集需要手动放置"
                 f"这适用于  {dataset_key}{f'/{subset_name}' if subset_name is not None else ''}. "
-                f"\n\n请将原始数据集放到 `/data/xx/test_github/createprompt_test/promptsource/datasets/{dataset_key}{f'/{subset_name}' if subset_name is not None else ''}`. "
+                f"\n\n请将原始数据集放到 `数据集存放根目录/{dataset_key}{f'/{subset_name}' if subset_name is not None else ''}`. "
             )
             st.stop()
 

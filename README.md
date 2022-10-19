@@ -20,11 +20,12 @@ Requirments
 "py7zr",
 ```
 
-you need to install the repo locally:
-
-1. Download the repo
-2. Navigate to the root directory of the repo
-3. Run `pip install -e .` to install the `promptsource` module
+1. 准备环境：`conda create -n cpromptsource(可换成你自己环境的名字) python=3.7`
+2. 激活环境：conda activate cpromptsource
+3. git clone此项目到你的本地/或者download此项目到本地
+4. 数据集准备：有部分数据集过大的数据集，我们将其下载链接放在了网盘中，可将其下载到目录cPromptSource/promptsource/datasets下
+5. cd到该项目的根目录下
+6. Run `pip install -e .` to install the `promptsource` module
 
 ### run this app
 
@@ -34,31 +35,45 @@ streamlit run promptsource/app.py
 
 ### **To start🤗**
 
-1.修改app.py中的以下路径为你所在的系统中所存放数据集根目录的地方:
+注意在编辑以下代码时请以utf-8的encoding编码方式打开：
+
+1.修改promptsource/app.py中的以下路径为所在的系统中所存放数据集根目录的地方:
 
 ```python
 configs = get_dataset_confs(数据集存放路径/%s % (dataset_key))
+...
+try:
+   if subset_name is None:
+      dataset = datasets.load_dataset("数据集存放路径/%s" % (dataset_key))
+   else:
+      dataset = datasets.load_dataset("数据集存放路径/%s/%s" % (dataset_key, subset_name), subset_name)
 ```
 
-例如：我的数据集全部放在路径：/data/xx/createpromptsource/promptsource/datasets下
+例如：如果您已经下载了我们的项目并要查看我们项目中的数据集，那么数据集存放路径应为：项目根目录/cPromptSource/promptsource/datasets下
 
-那么就需要对应的改为：
+比如：对应的改为：
 
 ```python
-configs = get_dataset_confs('/data/xx/createpromptsource/promptsource/datasets/%s % (dataset_key))
+configs = get_dataset_confs('/data/xx/cPromptSource/promptsource/datasets/%s % (dataset_key))
+...
+try:
+   if subset_name is None:
+      dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s" % (dataset_key))
+   else:
+      dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s/%s" % (dataset_key, subset_name), subset_name)
 ```
 
-2.修改util.py中的filter_datasets()的路径为你所存放数据集根目录的地方:
+2.修改promptsource/util.py中的filter_datasets()的路径与前面相同，同样为你所存放数据集目录的地方:
 
 ```
-dataset_file_path = 你自己的数据集存放路径
+dataset_file_path = 数据集存放路径
 ```
 
 ### 为你自己的数据集编写模板
 
 1.如果你想使用自己的数据集，首先需要把数据集对应的训练，测试文件处理成统一的json、csv等形式，具体可参考已经放入系统的数据集文件；
 
-2.将处理好的数据集放入前面统一放所有数据集的路径下即可，重新启动app，就可以在创建模板的模式下，选中你自己的数据集及逆行模板的编写了。
+2.将前面一步中promptsource/app.py和promptsource/util.py中的对应路径统一改为你所存放的自己的数据集的路径即可，重新启动app，就可以在创建模板的模式下，选中你自己的数据集及进行模板的编写了。
 
 ### To Contribute to us
 
@@ -66,7 +81,7 @@ dataset_file_path = 你自己的数据集存放路径
 
 - 将修改后的模板文件（templates下的任何文件）提交到git。
 - push到你在GitHub上的fork分支。
-- 在PromptSource repo上针对main打开一个pull request。
+- 在cPromptSource repo上针对main打开一个pull request。
 
 ### 如何获取使用添加了模板的数据集
 
@@ -137,5 +152,5 @@ print(f"https://huggingface.co/datasets/{dataset_repo_id}")
 
 ### 注意
 
-在linux系统下运行此项目，会经常出现con'nection error 所以如果可以 我们强烈建议您在windows系统下运行
+在linux系统下以及windows系统下均可运行，只不过需要修改的路径不同而已。
 

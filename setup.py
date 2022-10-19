@@ -10,11 +10,13 @@ requirements = [
     "isort==5.8.0",
     "pytest",
     "pyyaml>=5",
-    "streamlit==0.82",
+    "streamlit==0.84.0",
+    "protobuf==3.19.0",
     "jinja2",
     "plotly",
     "requests",
     "pandas",
+    "pygments",
     ##############################################################
     # Dependencies in this section are added for specific datasets
     ##############################################################
