@@ -169,7 +169,7 @@ else:
         #
         # Check for subconfigurations (i.e. subsets)
         #
-        configs = get_dataset_confs("/data/xx/cPromptSource/promptsource/datasets/%s" % (dataset_key))
+        configs = get_dataset_confs("datasets/%s" % (dataset_key))
         print(configs)
         conf_option = None
         if len(configs) > 0:
@@ -179,9 +179,9 @@ else:
         print(subset_name)
         try:
             if subset_name is None:
-                dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s" % (dataset_key))
+                dataset = datasets.load_dataset("datasets/%s" % (dataset_key))
             else:
-                dataset = datasets.load_dataset("/data/xx/cPromptSource/promptsource/datasets/%s/%s" % (dataset_key, subset_name), subset_name)
+                dataset = datasets.load_dataset("datasets/%s/%s" % (dataset_key, subset_name), subset_name)
         except OSError as e:
             st.error(
                 f"您自己的数据集需要手动放置"
