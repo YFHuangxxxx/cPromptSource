@@ -5,7 +5,7 @@
 # This code is taken from
 # https://gist.github.com/okld/0aba4869ba6fdc8d49132e6974e2e662
 #
-from streamlit.caching.hashing import _CacheFuncHasher
+from streamlit.hashing import _CodeHasher
 import streamlit.report_thread
 from streamlit import _get_report_ctx
 from streamlit.server.server import Server
