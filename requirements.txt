@@ -2,3 +2,13 @@ datasets
 huggingface_hub
 plotly
 streamlit==0.84.0
+black<=21.12b0
+flake8
+isort==5.8.0
+pytest
+pyyaml>=5
+jinja2
+requests
+pandas
+py7zr
+pygments
