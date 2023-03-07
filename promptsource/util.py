@@ -110,7 +110,7 @@ def filter_datasets():
 
     chinese_datasets = []
 
-    dataset_file_path = "/data/xx/cPromptSource/promptsource/datasets"
+    dataset_file_path = "datasets"
     dataset_file_name = os.listdir(dataset_file_path)
     for dataset_name in dataset_file_name:
         chinese_datasets.append(dataset_name)
