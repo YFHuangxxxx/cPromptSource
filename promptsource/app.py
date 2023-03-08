@@ -179,7 +179,7 @@ else:
 
         #subset_name = str(conf_option.name) if conf_option else None
         #print(subset_name)
-        dataset = datasets.load_dataset(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
+        dataset = datasets.load_dataset(os.path.join(DATASET_FOLDER_PATH, dataset_key))
         #try:
             #if subset_name is None:
                 #dataset = datasets.load_dataset(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
