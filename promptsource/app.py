@@ -23,7 +23,7 @@ from util import (
     renameDatasetColumn,
     render_features,
 )
-
+import os
 DATASET_FOLDER_PATH = pkg_resources.resource_filename(__name__, "datasets")
 # add an argument for read-only
 parser = argparse.ArgumentParser(description="run app.py with args")
