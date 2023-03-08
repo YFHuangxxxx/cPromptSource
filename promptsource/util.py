@@ -3,6 +3,7 @@ import os
 
 import datasets
 import requests
+import pkg_resources
 
 from templates import INCLUDED_USERS
 
