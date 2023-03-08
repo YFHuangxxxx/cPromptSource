@@ -11,6 +11,7 @@ from pygments import highlight
 from pygments.formatters import HtmlFormatter
 from pygments.lexers import DjangoLexer
 from templates import INCLUDED_USERS
+import pkg_resources
 
 from session import _get_state
 from templates import DatasetTemplates, Template, TemplateCollection
