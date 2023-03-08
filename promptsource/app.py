@@ -23,7 +23,7 @@ from util import (
     render_features,
 )
 
-
+DATASET_FOLDER_PATH = pkg_resources.resource_filename(__name__, "datasets")
 # add an argument for read-only
 parser = argparse.ArgumentParser(description="run app.py with args")
 parser.add_argument("-r", "--read-only", action="store_true", help="whether to run it as read-only mode")
@@ -169,6 +169,7 @@ else:
         #
         # Check for subconfigurations (i.e. subsets)
         #
+        #configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
         configs = get_dataset_confs("../datasets/%s" % (dataset_key))
         print(configs)
         conf_option = None
@@ -177,11 +178,13 @@ else:
 
         subset_name = str(conf_option.name) if conf_option else None
         print(subset_name)
-        try:
-            if subset_name is None:
-                dataset = datasets.load_dataset("../datasets/%s" % (dataset_key))
-            else:
-                dataset = datasets.load_dataset("../datasets/%s/%s" % (dataset_key, subset_name), subset_name)
+        dataset = datasets.load_dataset(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
+        #try:
+            #if subset_name is None:
+                #dataset = datasets.load_dataset(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
+                #dataset = datasets.load_dataset("../datasets/%s" % (dataset_key))
+            #else:
+                #dataset = datasets.load_dataset("../datasets/%s/%s" % (dataset_key, subset_name), subset_name)
         except OSError as e:
             st.error(
                 f"您自己的数据集需要手动放置"
