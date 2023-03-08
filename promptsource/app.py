@@ -149,7 +149,7 @@ else:
     #
 
     dataset_list = list_datasets()
-    example_index = dataset_list.index("ekar_chinese")
+    example_index = dataset_list.index("AFQMC-public")
 
     #
     # Select a dataset
@@ -170,8 +170,8 @@ else:
         #
         # Check for subconfigurations (i.e. subsets)
         #
-        #configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
-        configs = get_dataset_confs("../datasets/%s" % (dataset_key))
+        configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
+        #configs = get_dataset_confs("../datasets/%s" % (dataset_key))
         print(configs)
         conf_option = None
         if len(configs) > 0:
