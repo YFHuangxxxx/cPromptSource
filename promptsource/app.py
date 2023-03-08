@@ -170,15 +170,15 @@ else:
         #
         # Check for subconfigurations (i.e. subsets)
         #
-        configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
+        #configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
         #configs = get_dataset_confs("../datasets/%s" % (dataset_key))
-        print(configs)
-        conf_option = None
-        if len(configs) > 0:
-            conf_option = st.sidebar.selectbox("子集", configs, index=0, format_func=lambda a: a.name)
+        #print(configs)
+        #conf_option = None
+        #if len(configs) > 0:
+            #conf_option = st.sidebar.selectbox("子集", configs, index=0, format_func=lambda a: a.name)
 
-        subset_name = str(conf_option.name) if conf_option else None
-        print(subset_name)
+        #subset_name = str(conf_option.name) if conf_option else None
+        #print(subset_name)
         dataset = datasets.load_dataset(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
         #try:
             #if subset_name is None:
