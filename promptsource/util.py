@@ -7,6 +7,8 @@ import requests
 from templates import INCLUDED_USERS
 
 DEFAULT_PROMPTSOURCE_CACHE_HOME = ".cache/"
+DATASET_FOLDER_PATH = pkg_resources.resource_filename(__name__, "datasets")
+
 
 
 def removeHyphen(example):
@@ -110,7 +112,7 @@ def filter_datasets():
 
     chinese_datasets = []
 
-    dataset_file_path = "../datasets"
+    dataset_file_path = DATASET_FOLDER_PATH
     dataset_file_name = os.listdir(dataset_file_path)
     for dataset_name in dataset_file_name:
         chinese_datasets.append(dataset_name)
