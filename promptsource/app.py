@@ -185,13 +185,13 @@ else:
                 #dataset = datasets.load_dataset("../datasets/%s" % (dataset_key))
             #else:
                 #dataset = datasets.load_dataset("../datasets/%s/%s" % (dataset_key, subset_name), subset_name)
-        except OSError as e:
-            st.error(
-                f"您自己的数据集需要手动放置"
-                f"这适用于  {dataset_key}{f'/{subset_name}' if subset_name is not None else ''}. "
-                f"\n\n请将原始数据集放到 `数据集存放根目录/{dataset_key}{f'/{subset_name}' if subset_name is not None else ''}`. "
-            )
-            st.stop()
+        ##except OSError as e:
+            #st.error(
+                #f"您自己的数据集需要手动放置"
+                #f"这适用于  {dataset_key}{f'/{subset_name}' if subset_name is not None else ''}. "
+                #f"\n\n请将原始数据集放到 `数据集存放根目录/{dataset_key}{f'/{subset_name}' if subset_name is not None else ''}`. "
+            #)
+            #st.stop()
 
         splits = list(dataset.keys())
         index = 0
