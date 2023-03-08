@@ -173,7 +173,7 @@ else:
         #configs = get_dataset_confs(os.listdir(os.path.join(DATASET_FOLDER_PATH, dataset_key)))
         #configs = get_dataset_confs("../datasets/%s" % (dataset_key))
         #print(configs)
-        #conf_option = None
+        conf_option = None
         #if len(configs) > 0:
             #conf_option = st.sidebar.selectbox("子集", configs, index=0, format_func=lambda a: a.name)
 
@@ -220,9 +220,14 @@ else:
         num_templates = len(template_list)
         st.sidebar.write(
             "创建的提示数量为 "
-            + f"`{dataset_key + (('/' + conf_option.name) if conf_option else '')}`"
+            + f"`{dataset_key}`"
             + f": **{str(num_templates)}**"
         )
+        #st.sidebar.write(
+            #"创建的提示数量为 "
+            #+ f"`{dataset_key + (('/' + conf_option.name) if conf_option else '')}`"
+            #+ f": **{str(num_templates)}**"
+        #)
 
         if mode == "数据集预览":
             if num_templates > 0:
