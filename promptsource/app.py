@@ -205,15 +205,16 @@ else:
         #
         # Loads template data
         #
-        try:
-            dataset_templates = DatasetTemplates(dataset_key, conf_option.name if conf_option else None)
-        except FileNotFoundError:
-            st.error(
-                "无法找到提示文件夹!\n\n"
-                "我们希望该文件夹在工作目录中。"
-                "你可能需要在 repo 的根目录下重新启动应用程序。"
-            )
-            st.stop()
+        dataset_templates = DatasetTemplates(dataset_key)
+        #try:
+            #dataset_templates = DatasetTemplates(dataset_key, conf_option.name if conf_option else None)
+        #except FileNotFoundError:
+            #st.error(
+                #"无法找到提示文件夹!\n\n"
+                #"我们希望该文件夹在工作目录中。"
+                #"你可能需要在 repo 的根目录下重新启动应用程序。"
+            #)
+            #st.stop()
 
         template_list = dataset_templates.all_template_names
         num_templates = len(template_list)
